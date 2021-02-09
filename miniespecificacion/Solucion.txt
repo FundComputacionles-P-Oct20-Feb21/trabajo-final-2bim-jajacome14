@@ -1,0 +1,223 @@
+1. Inicio
+2. funcion principal()
+3. 	opcion1, i[0-n]
+4.	opcion2, x(10)[{a-z}, {A-Z}]
+5.	contCuentas, i[0-n] <-- 1
+6. 	bandera1 <-- true
+7. 	bandera2 <-- true
+8. 	Haga_hasta
+9. 		Escribir"Ingresar 1 para crear una cuenta en Facebook"
+10.		Escribir"Ingresar 2 para crear una cuenta en Whatsapp"
+11.		Escribir"Ingresar 3 para crear una cuenta en Telegram"
+12.		Escribir"Ingresar 4 para crear una cuenta en Signal"
+13.		Escribir"Ingresar 5 para crear una cuenta en Instagram"
+14.		Escribir"Ingresar 6 para crear una cuenta en Flickr"
+15.		Leer opcion1
+16.		Dependiendo_De (opcion) haga
+17.			Opcion 1
+18.				crearFacebook()
+19.			Fin
+20.			Opcion 2
+21.				crearWhatsapp()
+22.			Fin
+23.			Opcion 3
+24.				crearTelegram()
+25.			Fin
+26.			Opcion 4
+27.				crearSignal()
+28.			Fin
+29.			Opcion 5
+30.				crearInstagram()
+31.			Fin
+32.			Opcion 6
+33.				crearFlickr()
+34.			Fin
+35.		Fin_Dependiendo_De
+36.		Haga_Hasta
+37.			Escribir"Escriba si para crear mas cuentas"
+38.			Escribir"Escriba no para no crear mas cuentas"
+39.			Leer opcion2
+40.			Si (opcion2 == "no") Entonces
+41.				bandera1 <-- false
+42.				bandera2 <-- false
+43.				Escribir obtenerMensaje(contadorCuentas)
+44.			De_lo_contrario
+45.				Si (opcion2 == "si") Entonces
+46.				 bandera2 <-- false
+47.				 contadorCuentas <-- contadorCuentas + 1
+48.				De_lo_contrario
+49.				 Escribir"Opcion incorrecta."
+50.				Fin_Si
+51.			Fin_Si
+52.		Fin_Haga_Hasta (bandera2)
+53. 	Fin_Haga_Hasta (bandera1)
+54. fin funcion principal
+55. 	
+56. funcion crearFacebook()
+57.	nombreUsuario, x(100)[{a-z}, {BS}, {A-Z}]	
+58.	edadUsuario, i[0-n]
+59.	ciudadUsuario, x(80)[{a-z}, {BS}, {A-Z}]
+60.	paisUsuario, x(80)[{a-z}, {BS}, {A-Z}]	
+61.	correoUsuario, x(50)[{a-z}, {0-9}, {A-Z}, {@ _ .}]
+62.	Escribir "Usted escogio la opcion crear una cuenta en Facebook"
+63.	Escribir "Ingresar el nombre del Usuario: "
+64.	Leer nombreUsuario
+65.	Escribir "Ingresar la edad del Usuario: "
+66.	Leer edadUsuario
+67.	Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+68.	Leer ciudadUsuario
+69.	Escribir "Ingresar el pais donde se ubica el Usuario: "
+70.	Leer paisUsuario
+71.	Escribir "Ingresar el correo del Usuario: "
+72.	Leer correoUsuario
+73.	Escribir "Resumen de la cuenta creada en Facebook"
+74.	Escribir "Nombre del usuario: " + nombreUsuario
+75. 	Escribir " Edad del usuario: " + edadUsuario
+76.	Escribir "Ciudad del usuario: " + ciudadUsuario
+77.	Escribir "Pais del usuario: " + paisUsuario
+78.	Escribir "Correo del usuario: " + correoUsuario
+79. fin funcion crearFacebook
+80.
+81. funcion crearWhatsapp()
+82.	nombreUsuario, x(100)[{a-z}, {BS}, {A-Z}]	
+83.	edadUsuario, i[0-n]
+84.	ciudadUsuario, x(80)[{a-z}, {BS}, {A-Z}]
+85.	paisUsuario, x(80)[{a-z}, {BS}, {A-Z}]	
+86.	numeroTelefono, x(20)[{0-9}]
+87.	Escribir "Usted escogio la opcion crear una cuenta en Whatsapp"
+88.	Escribir "Ingresar el nombre del Usuario: "
+89.	Leer nombreUsuario
+90.	Escribir "Ingresar la edad del Usuario: "
+91.	Leer edadUsuario
+92.	Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+93.	Leer ciudadUsuario
+94.	Escribir "Ingresar el pais donde se ubica el Usuario: "
+95.	Leer paisUsuario
+96.	Escribir "Ingresar el numero de celular del Usuario: "
+97.	Leer numeroTelefono
+98.	Escribir "Resumen de la cuenta creada en Whatsapp"
+99.	Escribir "Nombre del usuario: " + nombreUsuario
+100.	Escribir " Edad del usuario: " + edadUsuario
+101.	Escribir "Ciudad del usuario: " + ciudadUsuario
+102.	Escribir "Pais del usuario: " + paisUsuario
+103.	Escribir "Numero del celular del usuario: " + numeroTelefono
+104. fin funcion crearWhatsapp
+105.
+106. funcion crearTelegram
+107.	nombreUsuario, x(100)[{a-z}, {BS}, {A-Z}]	
+108.	edadUsuario, i[0-n]
+109.	ciudadUsuario, x(80)[{a-z}, {BS}, {A-Z}]
+110	paisUsuario, x(80)[{a-z}, {BS}, {A-Z}]	
+111.	numeroTelefono, x(20)[{0-9}]
+112.	areaInteres, i[0-n]
+113.	Escribir "Usted escogio la opcion crear una cuenta en Telegram"
+114.	Escribir "Ingresar el nombre del Usuario: "
+115.	Leer nombreUsuario
+116.	Escribir "Ingresar la edad del Usuario: "
+117.	Leer edadUsuario
+118.	Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+119.	Leer ciudadUsuario
+120.	Escribir "Ingresar el pais donde se ubica el Usuario: "
+121.        Leer paisUsuario
+122.	Escribir "Ingresar el numero de celular del Usuario: "
+123.	Leer numeroTelefono
+124.	Escribir "Ingresar el area de interes del Usuario: "
+125.	Leer areaInteres
+126.	Escribir "Resumen de la cuenta creada en Telegram"
+127.	Escribir "Nombre del usuario: " + nombreUsuario
+128.	Escribir " Edad del usuario: " + edadUsuario
+129.	Escribir "Ciudad del usuario: " + ciudadUsuario
+130.	Escribir "Pais del usuario: " + paisUsuario
+131.	Escribir "Numero del celular del usuario: " + numeroTelefono
+132.	Escribir "Area de interes del usuario: " + areaInteres
+133. fin funcion crearTelegram
+134.
+135. funcion crearSignal()
+136. 	nombreUsuario, x(100)[{a-z}, {BS}, {A-Z}]
+137.	ciudadUsuario, x(80)[{a-z}, {BS}, {A-Z}]
+138.	paisUsuario, x(80)[{a-z}, {BS}, {A-Z}]	
+139.	numeroTelefono, x(20)[{0-9}]
+140.	hobbyPr, x(800)[{a-z}, {BS}, {A-Z}. {0-9}]
+141.	Escribir "Usted escogio la opcion crear una cuenta en Signal"
+142.	Escribir "Ingresar el nombre del Usuario: "
+143.	Leer nombreUsuario
+144.	Escribir "Ingresar el numero de celular del Usuario: "
+145.	Leer numeroTelefono
+146.	Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+147.	Leer ciudadUsuario
+148.	Escribir "Ingresar el pais donde se ubica el Usuario: "
+149.	Leer paisUsuario
+150.	Escribir "Ingresar el hobby principal del Usuario: "
+151.	Leer hobbyPr
+152.	Escribir "Resumen de la cuenta creada en Signal"
+153.	Escribir "Nombre del usuario: " + nombreUsuario
+154.	Escribir "Numero del celular del usuario: " + numeroTelefono
+155.	Escribir "Ciudad del usuario: " + ciudadUsuario
+156.	Escribir "Pais del usuario: " + paisUsuario
+157.	Escribir "Hobby del usuario: " + hobbyPr
+158. fin funcion crearSignal
+159.
+160. funcion crearInstagram
+161.	nombreUsuario, x(100)[{a-z}, {BS}, {A-Z}]
+162.	ciudadUsuario, x(80)[{a-z}, {BS}, {A-Z}]
+163.	paisUsuario, x(80)[{a-z}, {BS}, {A-Z}]	
+164.	numeroTelefono, x(20)[{0-9}]
+165.	Escribir "Usted escogio la opcion crear una cuenta en Instagram"
+166.	Escribir "Ingresar el nombre del Usuario: "
+167.	Leer nombreUsuario
+168.	Escribir "Ingresar el numero de celular del Usuario: "
+169.	Leer numeroTelefono
+170.	Escribir "Ingresar la ciudad donde se ubica el Usuario: "
+171.	Leer ciudadUsuario
+172.	Escribir "Ingresar el pais donde se ubica el Usuario: "
+173.	Leer paisUsuario
+174.	Escribir "Resumen de la cuenta creada en Instagram"
+175.	Escribir "Nombre del usuario: " + nombreUsuario
+176.	Escribir "Numero del celular del usuario: " + numeroTelefono
+177.	Escribir "Ciudad del usuario: " + ciudadUsuario
+178.	Escribir "Pais del usuario: " + paisUsuario
+179. fin funcion crearInstagram
+180.
+181. funcion crearFlickr
+182.	nombreUsuario, x(100)[{a-z}, {BS}, {A-Z}]
+183.	correoUsuario, x(50)[{a-z}, {0-9}, {A-Z}, {@ _ .}]
+184.	Escribir "Usted escogio la opcion crear una cuenta en Flickr"
+185.	Escribir "Ingresar el nombre del Usuario: "
+186.	Leer nombreUsuario
+187.	scribir "Ingresar el correo del Usuario: "
+188.	Leer correoUsuario
+189.	Escribir "Resumen de la cuenta creada en Flickr"
+190.	Escribir "Nombre del usuario: " + nombreUsuario
+191.	Escribir "Correo del usuario: " + correoUsuario
+192. fin funcion crearFlickr
+193.
+194. funcion obtenerMensaje(cont, i) : x
+195.	cadenaFinal, x(800)[{a-z}, {BS}, {A-Z}, {0-9}] <-- ""
+196.	(mensajeFinal)(3), x[{a-z}, {BS}, {A-Z},]
+197.	mensajeFinal <-- {"Campaña con poca afluencia",
+198.			 "Campaña moderada siga adelante",
+199.			 "Excelente campaña"}
+200.	Si ((cont >= 1) and (cont <= 5)) Entonces
+201.	    cadenaFianl <-- mensajeFinal[0]	
+203.	De lo contrario 
+204.	   Si ((cont >= 6) and (cont <= 15)) Entonces
+205.             cadenaFianl <-- mensajeFinal[1]
+206.           De lo contrario
+207.		Si (cont >= 16 ) Entonces
+208.		   cadenaFinal <-- mensajeFinal[2]
+209.		Fin_Si
+210.	    Fin_Si
+211.	Fin_Sin
+212.	return cadenaFinal
+213. fin funcion obtenerMensaje
+214. Fin	     
+
+
+		
+	
+
+	
+
+
+
+
